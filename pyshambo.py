@@ -22,7 +22,7 @@ class Contestant:
         else: self.compscore += 1
     
     def comp_choice(self, option_list):
-        option =  option_list[random.randrange(0, 2)]
+        option =  option_list[random.randrange(0, 3)]
         return [option.get('name'), option.get('beats'), option.get('loses')]
 
     def user_choice(self, choice, option_list):
